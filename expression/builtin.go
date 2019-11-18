@@ -25,10 +25,10 @@ import (
 	"sync"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/parser/ast"
+	_ "github.com/pingcap/parser/ast"
 	"github.com/pingcap/parser/charset"
 	"github.com/pingcap/parser/mysql"
-	"github.com/pingcap/parser/opcode"
+	_ "github.com/pingcap/parser/opcode"
 	"github.com/pingcap/tidb/sessionctx"
 	"github.com/pingcap/tidb/types"
 	"github.com/pingcap/tidb/types/json"
@@ -433,6 +433,7 @@ type functionClass interface {
 // check expression/function_traits.go to see if it should be appended to
 // any set there.
 var funcs = map[string]functionClass{
+	/*
 	// common functions
 	ast.Coalesce: &coalesceFunctionClass{baseFunctionClass{ast.Coalesce, 1, -1}},
 	ast.IsNull:   &isNullFunctionClass{baseFunctionClass{ast.IsNull, 1, 1}},
@@ -725,6 +726,7 @@ var funcs = map[string]functionClass{
 	ast.TiDBIsDDLOwner: &tidbIsDDLOwnerFunctionClass{baseFunctionClass{ast.TiDBIsDDLOwner, 0, 0}},
 	ast.TiDBParseTso:   &tidbParseTsoFunctionClass{baseFunctionClass{ast.TiDBParseTso, 1, 1}},
 	ast.TiDBDecodePlan: &tidbDecodePlanFunctionClass{baseFunctionClass{ast.TiDBDecodePlan, 1, 1}},
+	*/
 }
 
 // IsFunctionSupported check if given function name is a builtin sql function.

@@ -27,6 +27,7 @@ require (
 	github.com/gorilla/websocket v1.4.0 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.0.1-0.20190118093823-f849b5445de4
 	github.com/grpc-ecosystem/grpc-gateway v1.5.1 // indirect
+	github.com/jondot/goweight v1.0.5 // indirect
 	github.com/json-iterator/go v1.1.6 // indirect
 	github.com/klauspost/cpuid v0.0.0-20170728055534-ae7887de9fa5
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
@@ -42,7 +43,7 @@ require (
 	github.com/pingcap/errors v0.11.4
 	github.com/pingcap/failpoint v0.0.0-20190512135322-30cc7431d99c
 	github.com/pingcap/goleveldb v0.0.0-20191031114657-7683883cfb36
-	github.com/pingcap/kvproto v0.0.0-20191025022903-62abb760d9b1
+	github.com/pingcap/kvproto v0.0.0-20191030021250-51b332bcb20b
 	github.com/pingcap/log v0.0.0-20191012051959-b742a5d432e9
 	github.com/pingcap/parser v0.0.0-20191031081038-bfb0c3adf567
 	github.com/pingcap/pd v1.1.0-beta.0.20190923032047-5c648dc365e0

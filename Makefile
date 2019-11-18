@@ -228,7 +228,7 @@ importer:
 wasm:
 	mkdir -p wasm-dist
 	# We produce main.css instead of main.wasm because many CDNs don't compress .wasm file automatically.
-	GOOS=js GOARCH=wasm $(GOBUILD) -ldflags '$(LDFLAGS)' -o wasm-dist/main.css wasm/*.go
+	GOOS=js GOARCH=wasm $(GOBUILD) -ldflags '$(LDFLAGS) -s -w' -o wasm-dist/main.css wasm/*.go
 	cp "$(GOROOT)/misc/wasm/wasm_exec.js" wasm-dist/
 	cp wasm/favicon.ico wasm-dist/
 	cp wasm/*.js wasm-dist/
